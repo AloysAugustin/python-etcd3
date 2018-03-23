@@ -5,8 +5,8 @@ ARG http_proxy
 ARG HTTPS_PROXY
 ARG https_proxy
 
-RUN curl -L http://github.com/coreos/etcd/releases/download/v3.0.10/etcd-v3.0.10-linux-amd64.tar.gz | tar xzvf -
-ENV PATH $PATH:/etcd-v3.0.10-linux-amd64
+RUN curl -L http://github.com/coreos/etcd/releases/download/v3.3.2/etcd-v3.3.2-linux-amd64.tar.gz | tar xzvf -
+ENV PATH $PATH:/etcd-v3.3.2-linux-amd64
 
 RUN pip install -U tox
 
